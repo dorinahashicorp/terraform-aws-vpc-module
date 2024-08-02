@@ -1,11 +1,9 @@
 # aws-vpc-module
 
-This module contains re-usable code for deploying a VPC module in AWS. 
+This terraform module deploys a VPC as well as a Public and Private Subnet. Their IDs will be provided as an output, so they can be reused in other parts of the infrastructure stack.
 
-A single aws_vpc resource will be deployed.
-
-Customisation options are possible through the use of variables. 
+Default values are provided for the terraform variables, so the code can be executed as is for demonstration purposes (and assuming no conflicts with existing infrastructure), but custom input variables should be provided as needed. 
 
 # Required providers
 
-This requires Terraform version 1.5.0 or newer and AWS provider 5.0 or newer.
+This requires Terraform version 1.1.0 or newer and AWS provider 5.0 or newer.
