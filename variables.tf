@@ -1,19 +1,16 @@
 variable "vpc_cidr_range" {
   description = "The CIDR block for the AWS VPC"
-  type        = string
-  default     = "10.0.0.0/16"  
+  type        = string  
 }
 
 variable "vpc_name" {
   description = "The name to be assigned to the VPC"
-  type        = string
-  default     = "Core"  
+  type        = string  
 }
 
 variable "vpc_environment" {
   description = "The environment associated with the VPC"
-  type        = string
-  default     = "Test"  
+  type        = string  
 }
 
 variable "vpc_business_unit" {
@@ -36,13 +33,11 @@ variable "vpc_instance_tenancy" {
 variable "public_subnet_cidr" {
   description = "The CIDR block for the public subnet"
   type        = string
-  default     = "10.0.3.0/24"
 }
 
 variable "private_subnet_cidr" {
   description = "The CIDR block for the private subnet"
   type        = string
-  default     = "10.0.4.0/24"
 }
 
 variable "region" {
@@ -57,14 +52,13 @@ variable "public_subnet_name" {
   default     = "Public Subnet"  
 }
 
-variable "project_name" {
-  description = "The name of the project the subnet is associated with"
-  type        = string
-  default     = "Demo Project"  
-}
-
 variable "private_subnet_name" {
   description = "The name of the private subnet"
   type        = string
   default     = "Private Subnet"  
+}
+
+variable "project_name" {
+  description = "The name of the project the subnet is associated with"
+  type        = string  
 }
