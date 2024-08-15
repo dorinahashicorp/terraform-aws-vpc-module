@@ -40,7 +40,7 @@ variable "private_subnet_cidr" {
   type        = string
 }
 
-variable "region" {
+variable "aws_region" {
   description = "The AWS region"
   type        = string
   default     = "us-east-1"
